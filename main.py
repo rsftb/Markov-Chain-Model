@@ -80,7 +80,7 @@ while current_state is not None:
         current_state = transition_matrix[current_state][0]
         continue
 
-    # Get a random word from the transition matrix, weighted.
+    # Get a random word from the transition matrix, weighted
     # k = 1 (default)
     current_state = random.choices(
         transition_matrix[current_state],
