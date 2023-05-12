@@ -36,7 +36,7 @@ for word, lst in transition_matrix.items():
         tm_weights[word] = [1]
         continue
 
-    # If all next possible words are the same, collapse to a single weight, add a weight and continue
+    # If all next possible words are the same, collapse to a single word, add a weight and continue
     if all(lst[0] == lst[i] for i in range(len(lst))):
         transition_matrix[word] = [lst[0]]
         tm_weights[word] = [1]
