@@ -71,7 +71,7 @@ for word in transition_matrix.keys():
     current_state = word
     break
 
-# While the random walks haven't encountered the possibility of ending the script, keep churning new words
+# While the weighted random walks haven't encountered the possibility of ending the script, keep churning new words
 while current_state is not None:
     print(current_state)
 
