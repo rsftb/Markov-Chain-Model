@@ -1,9 +1,8 @@
-
 """
 Markov Chain Text Generator
-Always starts and ends with the same word
+Starts and ends with the first and last words of the given script respectively
 Weighted probability selection
-Heavily commented for illustratory purposes
+Lots of comments
 """
 
 import random
@@ -84,13 +83,10 @@ for word, lst in transition_matrix.items():
 
 # Now the transition_matrix[word] holds a list of next possible words, and-
 # -tm_weights contains the probability of any word being selected
-# We can almost start to generate some words now
+# We can almost start generating words
 
 # Get the first word out of the transition matrix as the current state
-current_state = None
-for word in transition_matrix.keys():
-    current_state = word
-    break
+current_state = next(iter(transition_matrix))
 
 # While the weighted random walks haven't encountered the possibility of -
 # - ending the script, keep printing the current state
