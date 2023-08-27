@@ -1,6 +1,6 @@
 """
 Markov Chain Text Generator
-Starts and ends with the first and last words of the given script respectively
+Starts and ends with the first and last word of the given script respectively
 Weighted probability selection
 Lots of comments
 """
